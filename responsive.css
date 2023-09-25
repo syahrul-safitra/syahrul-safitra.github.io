@@ -1,0 +1,200 @@
+@media screen and (max-width: 640px){
+    
+
+    section {
+        margin: auto;
+    }
+    .main-container {
+        margin: 0 auto;
+    }   
+    /* burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* navigation */
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: antiquewhite;
+        border-left: 1px solid black;
+
+        z-index: 99;
+
+        /* untuk mengakali navnya agar kesamping dengan tujuan user tidak dapat melihatnya, kecuali menu burger di klik. */
+        transform: translateX(100%);
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav {
+        padding: 0 0 4rem;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ketika burger di klik */
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle-burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toggle-burger .line2 {
+        opacity: 0;
+    }
+
+    .toggle-burger .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    #hero {
+        /* display: flex; */
+        height: fit-content;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .hero-left {
+        /* width: 100%; */
+    }
+
+    .hero-right {
+        order: -1;
+        justify-content: center;
+        /* width: max-content;
+        height: max-content; */
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-right img {
+        width: 70%;
+    }
+
+
+    .hero-left {
+        align-items: center;
+        justify-content: start;
+    }
+
+    .text-hero {
+        padding: 2rem 0;
+    }
+
+    /* ================================================= */
+    #bio {
+        height: max-content;
+    }
+    
+    .bio {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .my-bio {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .bio-left img {
+        width: 50%;
+    }
+
+    .bio-right {
+        width: 90%;
+        margin: auto;
+    }
+
+    .bio-right p {
+        text-align: justify;
+    }
+
+    .bio-right .btn-selengkapnya {
+        width: 100%;
+    }
+
+    /* Skills and Educations */
+
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        /* height: 200vh; */
+        /* justify-content: center; */
+    }
+
+    .container-edu {
+        gap: 1rem;
+    }
+
+    /* .grid-left {
+        width: 90%;
+    } */
+
+    .grid-right {
+        margin: auto;
+        width: 90%;
+        /* justify-content: center; */
+    }
+
+    .inner-front {
+        width: 100%;
+    }
+
+    #bio {
+        height: fit-content
+    }
+
+    #projects {
+        /* margin-top: 160vh; */
+    }
+
+    .text-works {
+        padding: 0 1rem;
+    }
+
+    .grid-project {
+        /* padding: 0 1rem; */
+        /* background-color: aqua; */
+    }
+
+    /* for responsive text */
+    .text-edu .tag-1 {
+        font-size: .8rem;
+    }
+
+    .text-edu .tag-2 {
+        font-size: 1.4rem;
+        margin: 1rem 0 2.5rem;
+    }
+
+    .text-works {
+        padding: 0;
+    }
+
+    .my-works {
+        font-size: .8rem;
+    }
+
+    .my-project {
+        font-size: 1.4rem;
+        margin: .5rem 0 2.5rem;
+    }
+}
